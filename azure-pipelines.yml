@@ -19,7 +19,7 @@ steps:
     version: '$(dotnetSdkVersion)'
 
 - task: Npm@1
-  displayName: 'Run npm install'
+  displayName: 'Run npma install'
   inputs:
     verbose: false
 
@@ -36,7 +36,7 @@ steps:
 - task: DotNetCoreCLI@2
   displayName: 'Restore project dependencies'
   inputs:
-    command: 'restoreaa'
+    command: 'restore'
     projects: '**/*.csproj'
 
 - task: DotNetCoreCLI@2
