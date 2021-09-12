@@ -32,7 +32,7 @@ stages:
           
           echo 'Hello world'
 
-- stage: 'Build-2'
+- stage: 'Build2'
   displayName: 'Build-2 the web application'
   jobs: 
   - job: 'Build'
