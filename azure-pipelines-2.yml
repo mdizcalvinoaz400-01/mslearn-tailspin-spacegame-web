@@ -6,6 +6,7 @@ variables:
   buildConfiguration: 'Release'
   releaseBranchName: 'release'
 
+name: 'hola'
 
 stages:
 - stage: 'Build'
