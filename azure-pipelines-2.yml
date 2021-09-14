@@ -32,6 +32,28 @@ stages:
           
           echo 'Hello world'
 
+  
+  - job: 'Build2'
+    displayName: 'Build 2 job'
+    pool:
+      vmImage: 'ubuntu-20.04'
+      demands:
+      - npm
+
+    variables:
+      wwwrootDir: 'Tailspin.SpaceGame.Web/wwwroot'
+      dotnetSdkVersion: '5.x'
+
+    steps:
+    
+    - task: Bash@3
+      inputs:
+        targetType: 'inline'
+        script: |
+          # Write your commands here
+          
+          echo 'Hello world'
+
 - stage: 'Build2'
   displayName: 'Build-2 the web application'
   jobs: 
