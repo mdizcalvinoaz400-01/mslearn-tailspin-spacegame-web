@@ -8,6 +8,7 @@ variables:
 
 name: 'hola'
 
+
 stages:
 - stage: 'Build'
   displayName: 'Build the web application'
